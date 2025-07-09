@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "A tool to fetch PubMed papers with non-academic authors"
+authors = ["Your Name <user@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pymed = "^0.8.2"
+
+[tool.poetry.scripts]
+get-papers-list = "scripts.get_papers_list:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
